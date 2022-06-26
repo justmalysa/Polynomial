@@ -1,0 +1,194 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Jun 20 20:17:37 2022
+# Process ID: 9728
+# Current directory: C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9628 C:\Users\Justyna\Desktop\Studies\EiT\semestr1\SDwUP\Project_Polynomial\AXI_Stream\polynomial\polynomial.xpr
+# Log file: C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/vivado.log
+# Journal file: C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd}
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.runs/impl_1/stream_acc_design_wrapper.sysdef C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk/stream_acc_design_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk -hwspec C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk/stream_acc_design_wrapper.hdf
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+launch_runs -jobs 8 stream_acc_design_polynomial_stream_acc_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+launch_runs -jobs 8 stream_acc_design_polynomial_stream_acc_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+launch_runs -jobs 8 stream_acc_design_polynomial_stream_acc_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+launch_runs -jobs 8 stream_acc_design_polynomial_stream_acc_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run stream_acc_design_polynomial_stream_acc_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+launch_runs -jobs 8 stream_acc_design_polynomial_stream_acc_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+launch_runs -jobs 8 stream_acc_design_polynomial_stream_acc_0_0_synth_1
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.runs/impl_1/stream_acc_design_wrapper.sysdef C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk/stream_acc_design_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk -hwspec C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk/stream_acc_design_wrapper.hdf
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:user:polynomial_stream_acc:1.0 [get_ips  stream_acc_design_polynomial_stream_acc_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips stream_acc_design_polynomial_stream_acc_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+catch { config_ip_cache -export [get_ips -all stream_acc_design_polynomial_stream_acc_0_0] }
+catch { config_ip_cache -export [get_ips -all stream_acc_design_auto_pc_0] }
+export_ip_user_files -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd]
+export_simulation -of_objects [get_files C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.srcs/sources_1/bd/stream_acc_design/stream_acc_design.bd] -directory C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files -ipstatic_source_dir C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/modelsim} {questa=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/questa} {riviera=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/riviera} {activehdl=C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+file copy -force C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.runs/impl_1/stream_acc_design_wrapper.sysdef C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk/stream_acc_design_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk -hwspec C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Stream/polynomial/polynomial.sdk/stream_acc_design_wrapper.hdf
