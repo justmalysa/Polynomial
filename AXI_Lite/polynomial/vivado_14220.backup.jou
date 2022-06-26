@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Jun 18 12:17:19 2022
+# Process ID: 14220
+# Current directory: C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Lite/polynomial
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14400 C:\Users\Justyna\Desktop\Studies\EiT\semestr1\SDwUP\Project_Polynomial\AXI_Lite\polynomial\polynomial.xpr
+# Log file: C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Lite/polynomial/vivado.log
+# Journal file: C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Lite/polynomial\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Lite/polynomial/polynomial.xpr
+update_compile_order -fileset sources_1
+launch_sdk -workspace C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Lite/polynomial/polynomial.sdk -hwspec C:/Users/Justyna/Desktop/Studies/EiT/semestr1/SDwUP/Project_Polynomial/AXI_Lite/polynomial/polynomial.sdk/design_acc_wrapper.hdf

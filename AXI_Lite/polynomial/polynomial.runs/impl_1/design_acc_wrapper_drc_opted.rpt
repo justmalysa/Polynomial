@@ -1,0 +1,358 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sat Jun 25 19:45:21 2022
+| Host         : DESKTOP-8IH5T52 running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_acc_wrapper_drc_opted.rpt -pb design_acc_wrapper_drc_opted.pb -rpx design_acc_wrapper_drc_opted.rpx
+| Design       : design_acc_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 64
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining       | 32         |
+| DPOP-1 | Warning  | PREG Output pipelining | 16         |
+| DPOP-2 | Warning  | MREG Output pipelining | 16         |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9 input design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9 output design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#5 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__10/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#6 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__11/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#7 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__12/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#8 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__13/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#9 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#10 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__3/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#11 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__4/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#12 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__5/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#13 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__6/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#14 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__7/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#15 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__8/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#16 Warning
+MREG Output pipelining  
+DSP design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9 multiplier stage design_acc_i/polynomial_ip_0/inst/polynomial_ip_v1_0_S00_AXI_inst/polynomial_rtl_inst/_temp__9/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+
